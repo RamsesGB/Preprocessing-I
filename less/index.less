@@ -53,8 +53,11 @@ table {
     box-sizing: border-box;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 html, body {
 	height: 100%;
+	font-family: 'Open Sans',serif;
 }
 
 html {
@@ -100,6 +103,7 @@ nav a {
 .skills-box {
 	flex-flow: row wrap;
 	justify-content: space-between;
+	margin: 2% 0%;
 }
 
 .history-box {
@@ -136,7 +140,7 @@ p {
 
 .child4 {
 	width: 45%;
-	margin: 2% 2%;
+	margin: 2% 2% 2% 0%;
 }
 
 .child5 {
@@ -147,6 +151,13 @@ p {
 
 .skill-chart {
 	border: 1px solid black;
+}
+
+.skills-list {
+	display: flex;
+	flex-flow: column wrap;
+	height: 70%;
+	align-content: stretch;
 }
 
 .default-img {

@@ -130,9 +130,16 @@ table {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
 html,
 body {
   height: 100%;
+  font-family: 'Open Sans', serif;
 }
 html {
   font-size: 62.5%;
@@ -166,6 +173,7 @@ nav a {
 .skills-box {
   flex-flow: row wrap;
   justify-content: space-between;
+  margin: 2% 0%;
 }
 .history-box {
   flex-flow: column wrap;
@@ -194,7 +202,7 @@ p {
 }
 .child4 {
   width: 45%;
-  margin: 2% 2%;
+  margin: 2% 2% 2% 0%;
 }
 .child5 {
   width: 45%;
@@ -203,6 +211,12 @@ p {
 }
 .skill-chart {
   border: 1px solid black;
+}
+.skills-list {
+  display: flex;
+  flex-flow: column wrap;
+  height: 70%;
+  align-content: stretch;
 }
 .default-img {
   width: 100%;
