@@ -156,6 +156,12 @@ body {
   flex-flow: column wrap;
   background: #e6eeff;
 }
+h1 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.7rem;
+}
 .child1 {
   height: 40%;
   width: 40%;
