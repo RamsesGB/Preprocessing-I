@@ -61,8 +61,9 @@ html {
 	font-size: 62.5%;
 }
 
-@small-txt: 1rem;
+@small-txt: 1.3rem;
 @medium-txt: 1.7rem;
+@big-txt: 2.3rem;
 @large-text: 3rem;
 
 .container {
@@ -82,13 +83,35 @@ body {
 	height: 100%;
 }*/
 
+header {
+	justify-content: flex-end;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: @small-txt;
+}
+
 .about-me-box {
 	flex-flow: column wrap;
-	background: #e6eeff;
+	background: #f2f2f2;
+}
+
+.skills-box {
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.history-box {
+	flex-flow: column wrap;
 }
 
 h1 {
 	font-size: @large-text;
+}
+
+h2 {
+	font-size: @big-txt;
 }
 
 p {
@@ -98,6 +121,32 @@ p {
 .child1 {
 	height: 40%;
 	width:  40%;
+	margin: 2% 2%;
+}
+
+.child2 {
+	margin: 2% 2% 1% 2%;
+	border-bottom: 1px solid gray;
+	padding-bottom: 2%;
+}
+
+.child3 {
+	margin: 2% 2%;
+}
+
+.child4 {
+	width: 45%;
+	margin: 2% 2%;
+}
+
+.child5 {
+	width: 45%;
+	align-items: stretch;
+	margin: 2% 2%;
+}
+
+.skill-chart {
+	border: 1px solid black;
 }
 
 .default-img {
@@ -105,5 +154,32 @@ p {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+}
+
+table {
+	font-size: @medium-txt;
+}
+
+tr {
+	text-align: left;
+	border-top: 1px solid lightgray;
+}
+
+th {
+	padding: 1% 0%;
+}
+
+td {
+	padding: 1% 0%;
+}
+
+.tr-bkg {
+	background: lightgrey;
+}
+
+footer {
+	text-align: center;
+	background: gray;
+	color: white;
 }
 
