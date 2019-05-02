@@ -203,51 +203,54 @@ header nav a {
   justify-content: space-between;
   margin: 2% 0%;
 }
-.history-box {
-  flex-flow: column wrap;
-}
-h1 {
-  font-size: 3rem;
-}
-h2 {
-  font-size: 2.3rem;
-}
-p {
-  font-size: 1.7rem;
-}
-.child4 {
+.skills-box .child4 {
   width: 45%;
   margin: 2% 2% 2% 0%;
 }
-.child5 {
+.skills-box .child4 h2 {
+  font-size: 2.3rem;
+}
+.skills-box .child4 p {
+  font-size: 1.7rem;
+}
+.skills-box .child5 {
   width: 45%;
   align-items: stretch;
   margin: 2% 2%;
 }
-.skill-chart {
-  border: 1px solid black;
+.skills-box .child5 h2 {
+  font-size: 2.3rem;
 }
-.skills-list {
+.skills-box .child5 .skills-list {
   display: flex;
   flex-flow: column wrap;
   height: 70%;
   align-content: stretch;
 }
-table {
+.skills-box .child5 .skills-list .skill-chart {
+  border: 1px solid black;
+}
+.history-box {
+  flex-flow: column wrap;
+}
+.history-box h2 {
+  font-size: 2.3rem;
+}
+.history-box table {
   font-size: 1.7rem;
 }
-tr {
+.history-box table .tr-bkg {
+  background: lightgrey;
+}
+.history-box table tr {
   text-align: left;
   border-top: 1px solid lightgray;
 }
-th {
+.history-box table tr th {
   padding: 1% 0%;
 }
-td {
+.history-box table tr td {
   padding: 1% 0%;
-}
-.tr-bkg {
-  background: lightgrey;
 }
 footer {
   text-align: center;
