@@ -227,6 +227,9 @@ header nav a {
   height: 70%;
   align-content: stretch;
 }
+.skills-box .child5 .skills-list p {
+  font-size: 1.7rem;
+}
 .skills-box .child5 .skills-list .skill-chart {
   border: 1px solid black;
 }
@@ -244,7 +247,7 @@ header nav a {
 }
 .history-box table tr {
   text-align: left;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid lightgrey;
 }
 .history-box table tr th {
   padding: 1% 0%;

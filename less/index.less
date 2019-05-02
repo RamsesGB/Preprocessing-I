@@ -64,10 +64,31 @@ html {
 	font-size: 62.5%;
 }
 
+//Text Variables
 @small-txt: 1.3rem;
 @medium-txt: 1.7rem;
 @big-txt: 2.3rem;
 @large-text: 3rem;
+
+//Color Variables
+@table-bkg-color: lightgrey;
+
+// Mix-ins
+.button-mix-in() {
+	background: grey;
+	color: white;
+	border-radius: 4px;
+	padding: 1% 2%;
+	font-size: @small-txt;
+}
+
+.pic-resize() {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+}
+
 
 body {
 	width: 1000px;
@@ -95,10 +116,7 @@ header {
 		width:  40%;
 		margin: 2% 2%;
 		.default-img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			overflow: hidden;
+			.pic-resize();
 		}
 	}
 	.child2 {
@@ -118,11 +136,7 @@ header {
 			font-size: @medium-txt;
 		}
 		button {
-			background: grey;
-			color: white;
-			border-radius: 4px;
-			padding: 1% 2%;
-			font-size: @small-txt;
+			.button-mix-in();
 		}
 	}
 }
@@ -153,6 +167,9 @@ header {
 			flex-flow: column wrap;
 			height: 70%;
 			align-content: stretch;
+			p {
+				font-size: @medium-txt;
+			}
 			.skill-chart {
 				border: 1px solid black;
 			}
@@ -169,11 +186,11 @@ header {
 	table {
 		font-size: @medium-txt;
 		.tr-bkg {
-			background: lightgrey;
+			background: @table-bkg-color;
 		}
 		tr {
 			text-align: left;
-			border-top: 1px solid lightgray;
+			border-top: 1px solid @table-bkg-color;
 			th {
 				padding: 1% 0%;
 			}
