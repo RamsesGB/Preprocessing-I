@@ -144,31 +144,59 @@ body {
 html {
   font-size: 62.5%;
 }
-.container {
-  display: flex;
-}
 body {
   width: 1000px;
   margin: 0px auto;
   height: 100%;
 }
-/*.main-container {
-	display: flex;
-	flex-flow: column wrap;
-	width: 1000px;
-	margin: 0px auto;
-	height: 100%;
-}*/
+.container {
+  display: flex;
+}
 header {
   justify-content: flex-end;
 }
-nav a {
+header nav a {
   text-decoration: none;
   font-size: 1.3rem;
 }
 .about-me-box {
   flex-flow: column wrap;
   background: #f2f2f2;
+}
+.about-me-box .child1 {
+  height: 40%;
+  width: 40%;
+  margin: 2% 2%;
+}
+.about-me-box .child1 .default-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.about-me-box .child2 {
+  margin: 2% 2% 1% 2%;
+  border-bottom: 1px solid gray;
+  padding-bottom: 2%;
+}
+.about-me-box .child2 h1 {
+  font-size: 3rem;
+}
+.about-me-box .child2 p {
+  font-size: 1.7rem;
+}
+.about-me-box .child3 {
+  margin: 2% 2%;
+}
+.about-me-box .child3 p {
+  font-size: 1.7rem;
+}
+.about-me-box .child3 button {
+  background: grey;
+  color: white;
+  border-radius: 4px;
+  padding: 1% 2%;
+  font-size: 1.3rem;
 }
 .skills-box {
   flex-flow: row wrap;
@@ -187,19 +215,6 @@ h2 {
 p {
   font-size: 1.7rem;
 }
-.child1 {
-  height: 40%;
-  width: 40%;
-  margin: 2% 2%;
-}
-.child2 {
-  margin: 2% 2% 1% 2%;
-  border-bottom: 1px solid gray;
-  padding-bottom: 2%;
-}
-.child3 {
-  margin: 2% 2%;
-}
 .child4 {
   width: 45%;
   margin: 2% 2% 2% 0%;
@@ -217,12 +232,6 @@ p {
   flex-flow: column wrap;
   height: 70%;
   align-content: stretch;
-}
-.default-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
 }
 table {
   font-size: 1.7rem;
